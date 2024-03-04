@@ -1,0 +1,283 @@
+*{}
+body{
+    background-color: beige;
+    width : 100%;
+    height : 100%;
+    margin : 0px;
+    padding : 0px;
+    font-size : .8rem;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.hidden{
+    display:none;
+}
+
+.wrapper{
+    width : 350px;
+    height : 100vh;
+    
+    
+    margin : 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding : 5px;
+    position:relative;
+}
+
+.wrapper>*{
+    margin-bottom : 3px;
+}
+
+.wrapper>*>*{
+    padding:0 10px;
+}
+
+/* header */
+.wrapper>.title{
+    background-color: white;    
+    border : 1px solid ;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;;
+    height : 55px;
+    padding : 5px;
+   
+    position:relative;
+
+    background-image:url('../image/title_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .8;
+    color:white;
+}
+.wrapper>.title >img{
+    width :65px;
+    height : 45px;
+    
+    position:absolute;
+    left:5px;
+    
+}
+.wrapper>.title>h4{
+   
+}
+.wrapper>.title>span{
+    font-size : .6rem;
+    text-align: right;
+    
+    display:block;
+    width : 100%;
+    padding-right:5px;
+}
+.wrapper>header{
+    height: 65px;
+    /* border : 1px solid; */
+    background-color: white;
+}
+.wrapper>header>.top-header{
+    height: 30px;
+    border : 1px solid;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom : 2px;
+
+    ;    
+}
+
+.wrapper>header>.top-header .material-symbols-outlined{
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
+    font-size : 1rem;
+
+}
+
+
+.wrapper>header>nav{
+    height: 35px;
+    border : 1px solid;
+
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+    position:relative;
+}
+.wrapper>header>nav>.left{
+
+}
+.wrapper>header>nav>.left>img{
+    width : 40px;
+    height : 40px;
+    border : 1px solid;
+    border-radius: 5px;
+}
+.wrapper>header>nav>.left>input{
+
+    width :120px;
+    height:35px;
+    font-size : .7rem;
+}
+.wrapper>header>nav>.left>input::placeholder{
+    font-size : .7rem;
+}
+
+.wrapper>header>nav>.right .connected-list{
+
+    padding : 5px;
+    position:absolute;
+    width : 50%;
+    height : 200px;
+    border : 1px solid gray;
+    right:2px;
+    top:40px;
+    /* opacity: .5; */
+
+    background-image:url('../image/title_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    color:white;
+
+}
+
+.wrapper>header>nav>.right .connected-list>.conn-title {
+    text-align:center;
+    font-size:.8rem;
+    position:relative;
+}
+
+.wrapper>header>nav>.right .connected-list>.conn-body{
+    height : 150px;
+    border : 1px solid gray;
+    color:white;
+    width: 100%;
+    margin : 5px auto;
+    padding : 2px;
+    overflow-x:hidden;
+    overflow-y:auto;
+
+}
+.wrapper>header>nav>.right .connected-list>.conn-body::-webkit-scrollbar{
+    /* display: none; */
+}
+
+/* main */
+.wrapper>main{}
+.wrapper>main>section{
+    height :280px;
+    border : 1px solid;
+    background-color: white;
+    overflow:auto;
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:nowrap;
+}
+.wrapper>main>section::-webkit-scrollbar{
+    display:none;
+}
+
+
+
+/* footer */
+.wrapper>footer{
+    height : 190px;
+    border : 1px solid;
+    padding : 3px;
+    background-color: white;;
+
+}
+.wrapper>footer .footer-top{
+    border : 1px solid;
+    margin-bottom : 2px;
+    height : 55px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    background-image:url('../image/title_bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: .8;
+
+}
+.wrapper>footer .footer-top>.left
+{
+    position:relative
+    ;
+}
+.wrapper>footer .footer-top>.left>img{
+    width : 40px;
+    height : 40px;
+    border : 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+
+    
+}
+.wrapper>footer .footer-top>.left:hover::after{
+    content:"Image file Drag & Drop";
+    display:flex;
+    justify-content : center;
+    align-items : center;
+    padding :  2px;
+    border : 1px solid;
+    color:gray;
+    background-color: beige;
+    
+
+    position:absolute;
+    left:0px;
+    top:-30px;
+
+}
+.wrapper>footer .footer-top>.left>input{
+
+    width :250px;
+    height:35px;
+    font-size : .6rem;
+}
+
+
+
+.wrapper>footer .footer-input{
+    width : 100%;
+    height : 100px;
+    padding : 2px;
+    border : 1px solid ;
+    display:flex;
+    justify-content : center;
+    align-items : center;
+}
+
+.wrapper>footer .footer-input textarea{
+        width : 350px;
+        height :80px;
+}
+
+.wrapper>footer .footer-bottom{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height : 30px;
+    font-size :.6rem;
+}
+.wrapper>footer .footer-bottom button{
+    border :1px solid;
+    height : 30px;
+
+}
